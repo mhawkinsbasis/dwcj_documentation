@@ -80,8 +80,8 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {to: '/live_demo', label: 'Live Demo(under construction)', position: 'left'},
-          {to: '/tutorials/intro', label: 'Tutorials(under construction)', position: 'left'},
+          {to: '/live_demo', label: 'Live Demo', position: 'left'},
+          {to: '/tutorials/intro', label: 'Tutorials', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',

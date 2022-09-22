@@ -37,9 +37,9 @@ You can follow [this link to find the download that's
 right for your system](https://code.visualstudio.com/download).
 
 ### Install Java Extension Pack
-This extension pack will come with various tools for Java, including a 
-debugging tool, syntax highlighting, and Maven interface, which will be
-used later on.
+[This extension pack will come with various tools for Java](https://code.visualstudio.com/docs/java/extensions)
+, including a debugging tool, syntax highlighting, and Maven 
+interface, which will be used later on.
 
 ![VS Code extension installation screenshot](./_images/image1.jpg)
 
@@ -104,8 +104,14 @@ enter the path to the **mvn.cmd** that you extracted in **[this step](#StepE)**.
 
 ## 2) BBj Download and Installation
 
-TODO - Will put a non-video version of this in the documentation, but for now 
-this will be left blank.
+The following video describes the steps needed download the tool that will install BBj on your machine. Watch from the beginning until the **1:30** mark. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ovk8kznQfGs?end=90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+
+Once you've downloaded the installer, follow this video's instructions to walk you through the installer options to put BBj on your machine. Follow this 
+video from **4:13** to **8:23**.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ovk8kznQfGs?start=253&end=503" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
 
 <br/>
 <br/>
