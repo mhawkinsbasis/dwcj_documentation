@@ -10,8 +10,8 @@ const FeatureList = [
     Svg: require('@site/static/img/documentation.svg').default,
     description: (
       <>
-        View extensive documentaiton on setting up and using the DWCJ, as well 
-        as its various components, controls, and other features. 
+        View extensive documentation on setting up and using the DWCJ, as well 
+        as its various components, controls, and features. 
       </>
     ),
   },
@@ -21,7 +21,7 @@ const FeatureList = [
     Svg: require('@site/static/img/demo.svg').default,
     description: (
       <>
-        Try out the DWCJ using our embedded editor without setting
+        Try out the DWCJ right here using our embedded editor without setting
         up the tool on your local machine.
       </>
     ),
@@ -32,9 +32,8 @@ const FeatureList = [
     Svg: require('@site/static/img/tutorial.svg').default,
     description: (
       <>
-        View tutorials created to walk you through every aspect of the DWCJ,
-        from installation, to initial use, to more complex application
-        application and web development tools.
+        View tutorials created to walk you through various aspects of the DWCJ,
+        including installation, control demonstrations, and appliication/web development .
       </>
     ),
   },
