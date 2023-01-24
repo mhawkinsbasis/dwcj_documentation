@@ -56,6 +56,11 @@ Button exampleButton = new Button("Example");      //Creates a new button with t
 exampleButton.setTheme(Button.Theme.DEFAULT);      //Sets the button's theme to be the default theme.
 ```
 
+|Button Themes|
+|-|
+|<ul><li>```Button.Theme.DEFAULT```</li><li>```Button.Theme.DANGER```</li><li>```Button.Theme.GRAY```</li><li>```Button.Theme.INFO```</li><li>```Button.Theme.PRIMARY```</li><li>```Button.Theme.SUCCESS```</li><li>```Button.Theme.WARNING```</li><li>```Button.Theme.OUTLINED_DEFAUT```</li><li>```Button.Theme.OUTLINED_DANGER```</li><li>```Button.Theme.OUTLINED_GRAY```</li><li>```Button.Theme.OUTLINED_INFO```</li><li>```Button.Theme.OUTLINED_PRIMARY```</li><li>```Button.Theme.OUTLINED_SUCCESS```</li><li>```Button.Theme.OUTLINED_WARNING```</li></ul>|
+
+
 ### Expanses
 There are five button expanses that are supported in the DWCJ which allow for quick styling without using CSS.
 The following expanses are supported for use with the button control: <br/><br/>
