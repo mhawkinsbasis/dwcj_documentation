@@ -2,6 +2,7 @@
 sidebar_position: 2
 ---
 
+
 # Button
 
 ### Description
@@ -12,14 +13,20 @@ with various themes, styles and expanses.
 
 ### At a Glance
 
+
+
 | Methods |
-|-------------|
-| <ul><li>[`Button(String text)`](#)</li><li>[`Button onClick(Consumer<ButtonPushEvent> callback)`](#)</li><li>[`Boolean isDisableOnClick()`](#)</li><li>[`Button setDisableOnClick(boolean disable)`](#)</li><li>[`Theme getTheme()`](#)</li><li>[`Button setTheme(Button.Theme theme)`](#)</li><li>[`Expanse getExpanse(Button.Theme theme)`](#)</li><li>[`Button setExpanse(Button.Expanse expanse)`](#)</li><li>[`TextVerticalAlignment getVerticalAlignment()`](#)</li><li>[`Button setVerticalAlignment(Button.TextVerticalAlignment alignment)`](#)</li></ul>|
-
-<!-- | Interfaces |
 |------------|
-| <ul><li>[`Button setText(String text)`](#)</li><li>[`Button setVisible(Boolean visible)`](#)</li><li>[](#)</li></ul>            | -->
+| <ul><li>[`Button(String text)`](#)</li><li>[`Boolean isDisableOnClick()`](#)</li><li>[`Button setDisableOnClick(boolean disable)`](#)</li><li>[`Theme getTheme()`](#)</li><li>[`Button setTheme(Button.Theme theme)`](#)</li><li>[`Expanse getExpanse(Button.Theme theme)`](#)</li><li>[`Button setExpanse(Button.Expanse expanse)`](#)</li><li>[`TextVerticalAlignment getVerticalAlignment()`](#)</li><li>[`Button setVerticalAlignment(Button.TextVerticalAlignment alignment)`](#)</li></ul>|
 
+
+| Events |
+|------------|
+| <ul><li>[`Button onClick(Consumer<ButtonPushEvent> callback)`](#)</li></ul> |
+
+| Interfaces |
+|------------|
+| <ul><li>[HasFocus](#)</li><li>[HasTabTraversal](#)</li><li>[HasTextAlignment](#)</li></ul>|
 
 
 <!-- ### Methods
@@ -43,9 +50,14 @@ Buttons come with a parameterized constructor, taking a String argument, which w
 ### Themes
 
 DWCJ button components come with 14 themes built in for quick styling without the use of CSS.
-The following themes are supported for use with the button control: <br/><br/>
+The following themes are supported for use with the button control: <br/>
 <!-- ![various button expanses](./_images/button_themes.jpg) -->
-<iframe src='http://localhost:8888/webapp/dwcj_engine?class=org.dwcj.extendeddemos.buttondemos.ButtonDemo' style={{"width": "100%"}}></iframe>
+<iframe src='http://localhost:8888/webapp/dwcj_engine?class=org.dwcj.extendeddemos.buttondemos.ButtonDemo' style={{"width": "100%"}}></iframe><br/>
+Listed below are the current supported theme options for the button control:<br/><br/>
+
+|Button Themes|
+|-|
+|<ul><li>```Button.Theme.DEFAULT```</li><li>```Button.Theme.DANGER```</li><li>```Button.Theme.GRAY```</li><li>```Button.Theme.INFO```</li><li>```Button.Theme.PRIMARY```</li><li>```Button.Theme.SUCCESS```</li><li>```Button.Theme.WARNING```</li><li>```Button.Theme.OUTLINED_DEFAULT```</li><li>```Button.Theme.OUTLINED_DANGER```</li><li>```Button.Theme.OUTLINED_GRAY```</li><li>```Button.Theme.OUTLINED_INFO```</li><li>```Button.Theme.OUTLINED_PRIMARY```</li><li>```Button.Theme.OUTLINED_SUCCESS```</li><li>```Button.Theme.OUTLINED_WARNING```</li></ul>|
 
 <br/>Theming is supported by use of a built-in enum class. To apply a theme, execute code similar to the following: <br/><br />
 
@@ -56,18 +68,38 @@ Button exampleButton = new Button("Example");      //Creates a new button with t
 exampleButton.setTheme(Button.Theme.DEFAULT);      //Sets the button's theme to be the default theme.
 ```
 
-|Button Themes|
-|-|
-|<ul><li>```Button.Theme.DEFAULT```</li><li>```Button.Theme.DANGER```</li><li>```Button.Theme.GRAY```</li><li>```Button.Theme.INFO```</li><li>```Button.Theme.PRIMARY```</li><li>```Button.Theme.SUCCESS```</li><li>```Button.Theme.WARNING```</li><li>```Button.Theme.OUTLINED_DEFAUT```</li><li>```Button.Theme.OUTLINED_DANGER```</li><li>```Button.Theme.OUTLINED_GRAY```</li><li>```Button.Theme.OUTLINED_INFO```</li><li>```Button.Theme.OUTLINED_PRIMARY```</li><li>```Button.Theme.OUTLINED_SUCCESS```</li><li>```Button.Theme.OUTLINED_WARNING```</li></ul>|
+<!-- ```java
+import org.dwcj.controls.button.Button;
+
+        Button defaultButton = new Button("DEFAULT").setTheme(Button.Theme.DEFAULT);
+        Button dangerButton = new Button("DANGER").setTheme(Button.Theme.DANGER);
+        Button grayButton = new Button("GRAY").setTheme(Button.Theme.GRAY);
+        Button infoButton = new Button("INFO").setTheme(Button.Theme.INFO);
+        Button primaryButton = new Button("PRIMARY").setTheme(Button.Theme.PRIMARY);
+        Button successButton = new Button("SUCCESS").setTheme(Button.Theme.SUCCESS);
+        Button warningButton = new Button("WARNING").setTheme(Button.Theme.WARNING);
+        Button outlineDefaultButton = new Button("OUTLINED DEFAULT").setTheme(Button.Theme.OUTLINED_DEFAULT);
+        Button outlineDangerButton = new Button("OUTLINED DANGER").setTheme(Button.Theme.OUTLINED_DANGER);
+        Button outlineGrayButton = new Button("OUTLINED GRAY").setTheme(Button.Theme.OUTLINED_GRAY);
+        Button outlineInfoButton = new Button("OUTLINED INFO").setTheme(Button.Theme.OUTLINED_INFO);
+        Button outlinePrimaryButton = new Button("OUTLINED PRIMARY").setTheme(Button.Theme.OUTLINED_PRIMARY);
+        Button outlineSuccessButton = new Button("OUTLINED SUCCESS").setTheme(Button.Theme.OUTLINED_SUCCESS);
+        Button outlineWarningButton = new Button("OUTLINED WARNING").setTheme(Button.Theme.OUTLINED_WARNING);
+``` -->
 
 
 ### Expanses
 There are five button expanses that are supported in the DWCJ which allow for quick styling without using CSS.
-The following expanses are supported for use with the button control: <br/><br/>
+The following expanses are supported for use with the button control: <br/>
 <!-- ![various button expanses](./_images/button_expanses.jpg) -->
-<iframe src='http://localhost:8888/webapp/dwcj_engine?class=org.dwcj.extendeddemos.buttondemos.ButtonExpanses' style={{"width": "100%", "height" : "100px"}}></iframe>
+<iframe src='http://localhost:8888/webapp/dwcj_engine?class=org.dwcj.extendeddemos.buttondemos.ButtonExpanses' style={{"width": "100%", "height" : "100px"}}></iframe><br/>
+Listed below are the current supported expanse options for the button control:<br/><br/>
 
-<br/>The various expanses are supported by use of a built-in enum class. To apply an expanse, execute code similar to the following: <br/><br/>
+|Button Expanses|
+|-|
+|<ul><li>```Button.Expanse.XSMALL```</li><li>```Button.Expanse.SMALL```</li><li>```Button.Expanse.MEDIUM```</li><li>```Button.Expanse.LARGE```</li><li>```Button.Expanse.XLARGE```</li></ul>|
+
+<br/>Expanses are supported by use of a built-in enum class. To apply an expanse, execute code similar to the following: <br/><br />
 
 ```java
 import org.dwcj.controls.button.Button;
@@ -76,12 +108,22 @@ Button exampleButton = new Button("Example");      //Creates a new button with t
 exampleButton.setTheme(Button.Expanse.MEDIUM);     //Sets the button's expanse to the medium size.
 ```
 
+
+
+
 ### Vertical Text Alignments
 
 The DWCJ supports alignment of text within a button without having to use CSS to accomplish this.
 Shown below are the three options for vertical alignment of text within a button : <br/><br/>
 <!-- ![various button expanses](./_images/button_alignments.jpg) -->
 <iframe src='http://localhost:8888/webapp/dwcj_engine?class=org.dwcj.extendeddemos.buttondemos.ButtonAlignment' style={{"width": "100%", "height" : "120px"}}></iframe>
+
+Listed below are the current supported vertical text alignments for the button control:
+
+|Button Vertical Alignments|
+|-|
+|<ul><li>```Button.Expanse.TOP```</li><li>```Button.Expanse.CENTER```</li><li>```Button.Expanse.BOTTOM```</li></ul>|
+
 
 <br/>The various alignments are supported by use of a built-in enum class. To apply an alignment, execute code similar to the following: <br/><br/>
 
@@ -91,6 +133,7 @@ import org.dwcj.controls.button.Button;
 Button exampleButton = new Button("Example");                             //Creates a new button with the text "example"
 exampleButton.setVerticalAlignment(Button.TextVerticalAlignment.CENTER);  //Sets the button's theme to be the default theme.
 ```
+
 
 ### Disabling a Button
 

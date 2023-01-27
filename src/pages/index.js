@@ -14,6 +14,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container" >
+        {/* <img src='https://dwcj.org/assets/img/logo.png'></img> */}
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         {/* <div className={styles.buttons}>
@@ -37,7 +38,7 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
-        {/* <div css={myStyles}>
+        {/* <div>
         test
       </div> */}
       </main>
