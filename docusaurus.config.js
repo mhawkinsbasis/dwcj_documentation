@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'The Dynamic Web Client for Java',
-  tagline: 'Learn to utilize what the DWCJ has to offer',
+  tagline: 'Develop your Progressive Web App in Java and deploy it to the BBj application server',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',

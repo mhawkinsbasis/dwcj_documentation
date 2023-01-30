@@ -5,9 +5,14 @@
 
 .heroBanner {
   padding: 4rem 0;
-  text-align: center;
   position: relative;
   overflow: hidden;
+  display: flex;
+}
+
+.test{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
 
 @media screen and (max-width: 996px) {

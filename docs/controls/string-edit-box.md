@@ -1,5 +1,5 @@
-<!-- ---
-sidebar_position: 
---- -->
+---
+sidebar_position: 120 
+---
 
-# StringEditBox
+# String Edit Box
