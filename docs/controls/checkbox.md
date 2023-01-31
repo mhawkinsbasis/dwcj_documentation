@@ -6,6 +6,10 @@ sidebar_position: 10
 
 ### At a Glance
 
+|Parent Class| Interfaces |
+|------------|------------|
+|[AbstractDwcControl](#)| <ul><li>[HasReadOnly](#)</li><li>[HasFocus](#)</li><li>[HasTabTraversal](#)</li><li>[HasTextAlignment](#)</li></ul>|
+
 | Methods |
 |------------|
 | <ul><li>[`ComboBox addItem(Object key, String item)`](#)</li><li>[`HorizontalTextPosition getHorizontalTextPosition()`](#)</li><li>[`Boolean isChecked()`](#)</li><li>[`CheckBox setChecked(Boolean checked)`](#)</li><li>[`CheckBox setExpanse(CheckBox.Expanse expanse)`](#)</li><li>[`CheckBox setHorizontalTextPosition(CheckBox.HorizontalTextPosition position)`](#)</li></ul>|
@@ -15,9 +19,6 @@ sidebar_position: 10
 |------------|
 | <ul><li>[`CheckBox onChange(Consumer<CheckBoxChangeEvent> callback)`](#)</li></ul> |
 
-|Parent Class| Interfaces |
-|------------|------------|
-|[AbstractDwcControl](#)| <ul><li>[HasReadOnly](#)</li><li>[HasFocus](#)</li><li>[HasTabTraversal](#)</li><li>[HasTextAlignment](#)</li></ul>|
 
 ### Checkbox Text
 

@@ -10,6 +10,10 @@ or webpages. The button's behavior can be modified with the methods and events l
 
 ### At a Glance
 
+|Parent Class| Interfaces |
+|------------|------------|
+|[AbstractDwcControl](#)| <ul><li>[HasFocus](#)</li><li>[HasTabTraversal](#)</li><li>[HasTextAlignment](#)</li></ul>|
+
 | Methods |
 |------------|
 | <ul><li>[`Button(String text)`](#)</li><li>[`Expanse getExpanse()`](#)</li><li>[`Theme getTheme()`](#)</li><li>[`TextVerticalAlignment getVerticalAlignment()`](#)</li><li>[`Boolean isDisableOnClick()`](#)</li><li>[`Button setDisableOnClick(boolean disable)`](#)</li><li>[`Button setExpanse(Button.Expanse expanse)`](#)</li><li>[`Button setTheme(Button.Theme theme)`](#)</li><li>[`Button setVerticalAlignment(Button.TextVerticalAlignment alignment)`](#)</li></ul>|
@@ -19,9 +23,6 @@ or webpages. The button's behavior can be modified with the methods and events l
 |------------|
 | <ul><li>[`Button onClick(Consumer<ButtonPushEvent> callback)`](#)</li></ul> |
 
-|Parent Class| Interfaces |
-|------------|------------|
-|[AbstractDwcControl](#)| <ul><li>[HasFocus](#)</li><li>[HasTabTraversal](#)</li><li>[HasTextAlignment](#)</li></ul>|
 
 
 <!-- ### Methods
@@ -131,6 +132,28 @@ src='http://localhost:8888/webapp/dwcj_control_demos?class=org.dwcj.control_demo
 style={{"width": "100%"}}></iframe>
 
 Disabling a button can be done at any time in the code by using the ```setEnabled(boolean foo)``` function. For added convenience, a button can also be disabled when clicked using the built-in ```setDisabledOnClick(boolean foo)``` function.
+
+### Adding Icons to Buttons
+
+In addition to, or instead of having text on a button, it is possible to add an icon to a button as well. Out of the box, the following icon pools can be used:
+
+<ol>
+    <li><a href='https://tabler-icons.io/'> Tabler </a></li>
+    <li><a href='https://feathericons.com/'> Feather </a></li>
+    <li><a href='https://fontawesome.com/'> Font Awesome Free </a></li>
+</ol>
+
+Below are examples of buttons with text to the left and right, as well as a button with only an icon:
+<iframe
+loading="lazy" 
+src='http://localhost:8888/webapp/dwcj_control_demos?class=org.dwcj.control_demos.buttondemos.ButtonIcon'
+style={{"width": "450px","height" : "70px"}}></iframe> <br /><br />
+
+To add these icons, set the button's text to have an `<html>` tag, with a `<bbj-icon>` tag inside with the name attribute set accordingly. In addition to an icon, include text to the left or right of the `<bbj-icon>` tag to include a label as well:
+
+```java
+ Button b1 = new Button ("<html><bbj-icon name=\"alien\"></bbj-icon> Button with Icon and Text</html>");
+```
 
 
 ### Sample Program

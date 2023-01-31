@@ -6,6 +6,10 @@ sidebar_position: 20
 
 ### At a Glance
 
+|Parent Class| Interfaces |
+|------------|------------|
+|[AbstractDwclistControl](#)| <ul><li>[HasReadOnly](#)</li><li>[HasFocus](#)</li><li>[HasTabTraversal](#)</li><li>[HasTextAlignment](#)</li></ul>|
+
 | Methods |
 |------------|
 | <ul><li>[`ComboBox addItem(Object key, String item)`](#)</li><li>[`ComboBox addItems(Map<Object, String> items)`](#)</li><li>[`ComboBox close()`](#)</li><li>[`ComboBox deselect()`](#)</li><li>[`Map<Object, String> getAllItems()`](#)</li><li>[`String getItem(Object key)`](#)</li><li>[`String getItemAt(Integer idx)`](#)</li><li>[`Integer getItemCount()`](#)</li><li>[`Integer getSelectedIndex()`](#)</li><li>[`SimpleEntry<Object, String> getSelectedItem()`](#)</li><li>[`ComboBox insertItemAt(Object key, String item, Integer index)`](#)</li><li>[`ComboBox insertItemsAt(Map<Object, String> items, Integer index)`](#)</li><li>[`ComboBox open()`](#)</li><li>[`ComboBox removeAllItems()`](#)</li><li>[`ComboBox removeItemAt(Integer index)`](#)</li><li>[`ComboBox selectIndex(Integer index)`](#)</li><li>[`ComboBox setItems(Map<Object, String> values)`](#)</li><li>[`ComboBox setMaximumRowCount(Integer max)`](#)</li><li>[`ComboBox setTextAt(Integer idx, String text)`](#)</li></ul>|
@@ -15,9 +19,6 @@ sidebar_position: 20
 |------------|
 | <ul><li>[`ComboBox onClose(Consumer<ComboBoxCloseEvent> callback)`](#)</li><li>[`ComboBox onOpen(Consumer<ComboBoxOpenEvent> callback)`](#)</li><li>[`ComboBox onSelect(Consumer<ComboBoxSelectEvent> callback)`](#)</li></ul> |
 
-|Parent Class| Interfaces |
-|------------|------------|
-|[AbstractDwclistControl](#)| <ul><li>[HasReadOnly](#)</li><li>[HasFocus](#)</li><li>[HasTabTraversal](#)</li><li>[HasTextAlignment](#)</li></ul>|
 
 
 ### Themes
@@ -27,7 +28,7 @@ Shown below are example boxes with each of the supported Themes applied: <br/>
 <!-- ![various button expanses](./_images/button_themes.jpg) -->
 <iframe 
 loading="lazy"
-src='http://localhost:8888/webapp/dwcj_control_demos?class=org.dwcj.control_demos.combobox.ComboboxThemeDemo' 
+src='http://localhost:8888/webapp/dwcj_control_demos?class=org.dwcj.control_demos.comboboxdemos.ComboboxThemeDemo' 
 style={{"width": "100%", "height" : "250px"}}></iframe><br/>
 Listed below are the current supported theme options for the button control:<br/><br/>
 
@@ -51,7 +52,7 @@ Below are the various expanses supported this control: <br/>
 <!-- ![various button expanses](./_images/button_expanses.jpg) -->
 <iframe 
 loading="lazy"
-src='http://localhost:8888/webapp/dwcj_control_demos?class=org.dwcj.control_demos.combobox.ComboboxExpanseDemo' 
+src='http://localhost:8888/webapp/dwcj_control_demos?class=org.dwcj.control_demos.comboboxdemos.ComboboxExpanseDemo' 
 style={{"width": "100%", "height" : "120px"}}></iframe><br/>
 Listed below are the current supported expanse options for the button control:<br/><br/>
 
