@@ -20,6 +20,23 @@ sidebar_position: 20
 | <ul><li>[`ComboBox onClose(Consumer<ComboBoxCloseEvent> callback)`](#)</li><li>[`ComboBox onOpen(Consumer<ComboBoxOpenEvent> callback)`](#)</li><li>[`ComboBox onSelect(Consumer<ComboBoxSelectEvent> callback)`](#)</li></ul> |
 
 
+### Labeling
+
+Labels can be easily added above the component without the need to create a separate Label component above the control. 
+
+<iframe 
+loading="lazy"
+src='http://localhost:8888/webapp/dwcj_control_demos?class=org.dwcj.control_demos.comboboxdemos.ComboboxLabelDemo' 
+style={{"width": "100%", "height":"100px"}}></iframe><br/><br />
+
+Use the `setAttribute()` function to create a label. The attribute to be changed is `label`, and the value should be the desired label text.  <br/><br />
+
+```java
+import org.dwcj.controls.combobox.ComboBox;
+
+ComboBox exampleComboBox = new ComboBox();      //Creates a new ComboBox
+exampleComboBox.setAttribute("label", "Example combo box label!");     //Gives the combo box a label with the provided text
+```
 
 ### Themes
 
@@ -29,7 +46,7 @@ Shown below are example boxes with each of the supported Themes applied: <br/>
 <iframe 
 loading="lazy"
 src='http://localhost:8888/webapp/dwcj_control_demos?class=org.dwcj.control_demos.comboboxdemos.ComboboxThemeDemo' 
-style={{"width": "100%", "height" : "250px"}}></iframe><br/>
+style={{"width": "100%", "height" : "170px"}}></iframe><br/>
 Listed below are the current supported theme options for the button control:<br/><br/>
 
 |Combo Box Themes|
