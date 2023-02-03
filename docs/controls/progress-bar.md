@@ -83,7 +83,7 @@ style={{"width": "100%", "height":"100px"}}></iframe><br/><br />
 
 ### Themes
 
-The DWCJ progress bar comes with 14 themes built in for quick styling without the use of CSS.
+The DWCJ progress bar comes with 6 themes built in for quick styling without the use of CSS.
 Shown below are progress bars with each of the supported Themes applied: <br/>
 <iframe 
 loading="lazy"
@@ -92,7 +92,7 @@ style={{"width": "100%", "height":"320px"}}></iframe><br/><br/>
 
 |Progress Bar Themes|
 |-|
-|<ul><li>```ProgressBar.Theme.DEFAULT```</li><li>```ProgressBar.Theme.DANGER```</li><li>```ProgressBar.Theme.GRAY```</li><li>```ProgressBar.Theme.INFO```</li><li>```ProgressBar.Theme.PRIMARY```</li><li>```ProgressBar.Theme.SUCCESS```</li><li>```ProgressBar.Theme.WARNING```</li></ul>|
+|<ul><li>```ProgressBar.Theme.DEFAULT```</li><li>```ProgressBar.Theme.DANGER```</li><li>```ProgressBar.Theme.GRAY```</li><li>```ProgressBar.Theme.INFO```</li><li>```ProgressBar.Theme.SUCCESS```</li><li>```ProgressBar.Theme.WARNING```</li></ul>|
 
 <br/>Theming is supported by use of a built-in enum class. To apply a theme, execute code similar to the following: <br/><br />
 
