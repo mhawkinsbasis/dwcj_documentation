@@ -13,8 +13,3 @@ sidebar_position: 150
 | Methods |
 |------------|
 | <ul><li>[``](#)</li></ul>|
-
-
-| Events |
-|------------|
-| <ul></ul> |
