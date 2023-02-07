@@ -1,14 +1,14 @@
----
+<!-- ---
 sidebar_position: 1
----
+--- -->
 
 
-# HasAttribute
+# Has Attribute
 
-### Description
-
-This button control object provides methods for creating and manipulating a button in applications
-or webpages. The button's behavior can be modified with the methods below, and is customizable 
-with various themes, styles and expanses.
+A control implements the HasAttribute interface if it is able to be assigned HTML attributes on a page.
 
 ### At a Glance
+
+| Methods |
+|------------|
+| <ul><li>[`public String getAttribute(String attribute)`](#)</li><li>[`public HasAttribute setAttribute(String attribute, String value)`](#)</li></ul>|
