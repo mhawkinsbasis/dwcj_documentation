@@ -4,6 +4,9 @@ sidebar_position: 120
 
 # String Edit Box
 
+### At a Glance
+
+
 |Parent Class| Interfaces |
 |------------|------------|
 |[AbstractDwcControl](#)| <ul><li>[HasReadOnly](#)</li><li>[HasFocus](#)</li><li>[HasTabTraversal](#)</li><li>[HasTextAlignment](#)</li><li>[HasTextHighlight](#)</li></ul>|
